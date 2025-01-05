@@ -1,0 +1,3 @@
+[submodule "schwab-auth"]
+	path = schwab-auth
+	url = https://github.com/gutterwock/schwab-auth.git

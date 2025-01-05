@@ -1,0 +1,21 @@
+{
+  "name": "stonks",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "install-all": "npm install && npm install --prefix schwab-auth",
+    "auth": "node schwab-auth/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gutterwock/stonks.git"
+  },
+  "author": "",
+  "license": "GNU GPL",
+  "bugs": {
+    "url": "https://github.com/gutterwock/stonks/issues"
+  },
+  "homepage": "https://github.com/gutterwock/stonks#readme"
+}
