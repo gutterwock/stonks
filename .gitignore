@@ -1,2 +1,3 @@
-*/config.json
-*/token.json
+schwab-auth/package.json
+schwab-auth/package-lock.json
+config/*.json
