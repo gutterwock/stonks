@@ -12,7 +12,7 @@ const saveToLocal = (filename, data) => {
 
 const loadFromLocal = (filename) => {
 	try {
-		return fs.readFileSync(`./tmp/${filename}.json`);
+		return JSON.parse(fs.readFileSync(`./tmp/${filename}.json`));
 	} catch (error) {
 		logError({ error });
 		throw error;
