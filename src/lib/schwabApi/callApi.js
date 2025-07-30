@@ -13,6 +13,7 @@ const callApi = async ({
 }) => {
 	try {
 		const queryStr = urlQueryParams && Object.keys(urlQueryParams)
+			.filter((key) => urlQueryParams[key])
 			.map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(urlQueryParams[key])}`)
 			.join("&");
 		const url = BASE_URL + path + (queryStr ? "?" + queryStr : "");
