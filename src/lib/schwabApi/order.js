@@ -12,7 +12,7 @@ const getOrders = ({ accountNumber, from, status, to }) => {
 	});
 };
 
-const cancelOrder = (accountNumber, orderId) => {
+const cancelOrder = ({ accountNumber, orderId }) => {
 	return callApi({
 		method: "delete",
 		path: `/trader/v1/accounts/${accountNumber}/orders/${orderId}`,
